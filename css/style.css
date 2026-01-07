@@ -28,96 +28,180 @@ body {
     background-color: rgb(7, 0, 34);
     color: white;
 }
+
+
 .starfield {
     position: fixed;
     top: 0;
-    left: auto;
-    width: 100%;
-    height: 100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
     overflow: hidden;
-    perspective: 1000px;
 }
+
+/* Центральная точка */
+.center-point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 
+        0 0 20px 8px rgba(255, 255, 255, 0.8),
+        0 0 40px 15px rgba(100, 150, 255, 0.5);
+    z-index: 1000;
+}
+
 .star {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 2px;
-    height: 2px;
-    background-color: #fff;
     border-radius: 50%;
-    transform: center center;
-}
-.star.fast {
-    width: 1px;
-    height: 1px;
-    background-color: #fff;
-    animation: hyperspaceFast linear infinite;
-}
-.star.medium {
-    width: 2px;
-    height: 2px;
-    background-color: #e0e0ff;
-    animation: hyperspaceMedium linear infinite;
-}
-.star.slow {
-    width: 3px;
-    height: 3px;
-    background-color: #ccccff;
-    animation: hyperspaceSlow linear infinite;
+    transform-origin: center;
 }
 
-@keyframes hyperspaceFast {
+/* Разные типы звезд */
+.star.tiny {
+    width: 1px;
+    height: 1px;
+    background: #fff;
+    animation: starMoveTiny linear infinite;
+}
+
+.star.small {
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    animation: starMoveSmall linear infinite;
+}
+
+.star.medium {
+    width: 3px;
+    height: 3px;
+    background: #e0e0ff;
+    animation: starMoveMedium linear infinite;
+}
+
+.star.large {
+    width: 4px;
+    height: 4px;
+    background: #ccccff;
+    box-shadow: 0 0 4px 1px rgba(200, 200, 255, 0.5);
+    animation: starMoveLarge linear infinite;
+}
+
+/* Цветные звезды для разнообразия */
+.star.blue {
+    background: #aaccff;
+    box-shadow: 0 0 3px 1px rgba(170, 204, 255, 0.6);
+}
+
+.star.yellow {
+    background: #ffffaa;
+    box-shadow: 0 0 3px 1px rgba(255, 255, 170, 0.6);
+}
+
+/* Анимации с разной скоростью и траекториями */
+@keyframes starMoveTiny {
     0% {
-        transform: translate3d(var(--tx), var(--ty), 2000px)
+        transform: 
+            translate(-50%, -50%) 
+            translateX(var(--start-x)) 
+            translateY(var(--start-y)) 
             scale(0.1);
         opacity: 0;
     }
-    10% {
-        opacity: 1;
+    5% {
+        opacity: 0.9;
     }
-    90% {
-        opacity: 1;
+    95% {
+        opacity: 0.9;
     }
     100% {
-        transform: translate3d(var(--tx), var(--ty), -2000px)
+        transform: 
+            translate(-50%, -50%) 
+            translateX(calc(var(--start-x) * 25)) 
+            translateY(calc(var(--start-y) * 25)) 
             scale(3);
         opacity: 0;
     }
 }
-@keyframes hyperspaceMedium {
+
+@keyframes starMoveSmall {
     0% {
-        transform: translate3d(var(--tx), var(--ty), 3000px)
+        transform: 
+            translate(-50%, -50%) 
+            translateX(var(--start-x)) 
+            translateY(var(--start-y)) 
             scale(0.1);
         opacity: 0;
     }
-    10% {
-        opacity: 1;
+    5% {
+        opacity: 0.8;
     }
-    90% {
-        opacity: 1;
+    95% {
+        opacity: 0.8;
     }
     100% {
-        transform: translate3d(var(--tx), var(--ty), -2000px)
+        transform: 
+            translate(-50%, -50%) 
+            translateX(calc(var(--start-x) * 20)) 
+            translateY(calc(var(--start-y) * 20)) 
             scale(2.5);
         opacity: 0;
     }
 }
-@keyframes hyperspaceSlow {
+
+@keyframes starMoveMedium {
     0% {
-        transform: translate3d(var(--tx), var(--ty), 4000px)
+        transform: 
+            translate(-50%, -50%) 
+            translateX(var(--start-x)) 
+            translateY(var(--start-y)) 
             scale(0.1);
         opacity: 0;
     }
-    10% {
+    5% {
+        opacity: 0.7;
+    }
+    95% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: 
+            translate(-50%, -50%) 
+            translateX(calc(var(--start-x) * 15)) 
+            translateY(calc(var(--start-y) * 15)) 
+            scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes starMoveLarge {
+    0% {
+        transform: 
+            translate(-50%, -50%) 
+            translateX(var(--start-x)) 
+            translateY(var(--start-y)) 
+            scale(0.1);
+        opacity: 0;
+    }
+    5% {
         opacity: 1;
     }
-    90% {
+    95% {
         opacity: 1;
     }
     100% {
-        transform: translate3d(var(--tx), var(--ty), -2000px)
-            scale(2);
+        transform: 
+            translate(-50%, -50%) 
+            translateX(calc(var(--start-x) * 12)) 
+            translateY(calc(var(--start-y) * 12)) 
+            scale(1.8);
         opacity: 0;
     }
 }
