@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио веб‑разработчика: проекты, навыки, контакты. Создаю адаптивные сайты и веб‑приложения с чистым кодом. Посмотрите мои работы!">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Портфолио</title>
+    <title>Моё портфолио - "Веб-разработчик"</title>
 </head>
 <body>
     <header class="header">
-        <a class="logo" href="/" aria-label="На главную страницу">
-            <img class="logo__img" src="./img/logo.svg" alt="Логотип Portfolio" >
+        <a class="logo" href="#intro" aria-label="На главную страницу">
+            <img class="logo__img" src="./img/logo.svg" alt="Логотип Portfolio - Веб-разработчик" >
             <span class="logo__text">PORTFOLIO</span>
         </a>
         <nav class="nav" aria-label="Основная навигация по сайту">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="/" class="nav__link" aria-current="page">Главная</a>
+                    <a href="#intro" class="nav__link" aria-current="page">Главная</a>
                 </li>
                 <li class="nav__item">
                     <a href="#projects" class="nav__link">Проекты</a>
@@ -27,10 +28,62 @@
                 <li class="nav__item">
                     <a href="#contacts" class="nav__link">Контакты</a>
                 </li>
+                <li class="nav__item">
+                    <a href="#prices" class="nav__link">Прайс</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <div class="starfield" id="starfield"></div>
+    <main class="main">
+        <section class="intro" id="intro">
+            <h1 class="intro__title">Добро пожаловать в моё портфолио</h1>
+            <p class="intro__text">
+                Исследуйте мои проекты через звездные врата. Каждый поворот открывает новый мир возможностей
+            </p>
+            <button class="intro__btn" aria-label="Перейти к проектам">
+                Начать путешествие
+            </button>
+        </section>
+        <section class="projects" id="projects">
+            <h2 class="projects__title">
+                Мои проекты
+            </h2>
+        </section>
+        <section class="technologies" >
+            <h2 class="technologies__title">
+                Изученные технологии
+            </h2>
+        </section>
+        <section class="literature">
+            <h2 class="literature__title">
+                Изученная литература
+            </h2>
+        </section>
+        <section class="statistics">
+            <h2 class="statistics__title">
+                Статистика кода
+            </h2>
+        </section>
+        <section class="about" id="about">
+            <h2 class="about__title">
+                О себе
+            </h2>
+        </section>
+        <section class="contacts" id="contacts">
+            <h2 class="contacts__title">
+                Свяжитесь со мной
+            </h2>
+        </section>
+        <section class="prices" id="prices">
+            <h2 class="prices__title">
+                Услуги и цены
+            </h2>
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+    <div class="starfield" id="starfield" aria-hidden="true"></div>
     <script src="./js/script.js"></script>
 </body>
 </html>
