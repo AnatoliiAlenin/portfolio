@@ -40,45 +40,136 @@
             <p class="intro__text">
                 Исследуйте мои проекты через звездные врата. Каждый поворот открывает новый мир возможностей
             </p>
-            <button class="intro__btn" aria-label="Перейти к проектам">
+            <button class="intro__btn" aria-label="Перейти к проектам" onclick="location.href='#projects'">
                 Начать путешествие
             </button>
         </section>
+
         <section class="projects" id="projects">
-            <h2 class="projects__title">
-                Мои проекты
-            </h2>
+            <header class="projects__header">
+                <h2 class="projects__title">
+                    Мои проекты
+                </h2>
+                <p class="projects__text">
+                    Используйте звездные врата для навигации по проектам
+                </p>
+            </header>
+            
+            <div class="gates" role="region" aria-label="Навигация по проектам">
+                <aside class="gates__left" aria-label="Панель управления проектами">
+                    <ul class="technologies__list">
+                        <li class="technologies__item">HTML</li>
+                        <li class="technologies__item">CSS</li>
+                        <li class="technologies__item">JS</li>
+                        <li class="technologies__item">TS</li>
+                        <li class="technologies__item">MySQL</li>
+                        <li class="technologies__item">NODE</li>
+                        <li class="technologies__item">PHP</li>
+                        <li class="technologies__item">PY</li>
+                    </ul>
+
+                    <nav class="gates__navigation" aria-label="Навигация по проектам">
+                        <button class="gates__nav-btn" type="button"
+                            aria-label="Предыдущий проект">
+                            ←
+                        </button>
+                        <button class="gates__nav-btn" type="button"
+                            aria-label="Следующий проект">
+                            →
+                        </button>
+                    </nav>
+
+                </aside>
+
+                <div class="gates__right">
+                    <article class="card">
+                        <header class="card__header">
+                            <div class="card__number">
+                                <span class="card__span">1</span>
+                                <div>
+                                    <h3 class="card__title">
+                                        Music Streaming App
+                                    </h3>
+                                    <span class="card__nomer">Проект #1</span>
+                                </div>
+                            </div>
+                            <p class="card__text">
+                                Приложение для потокового воспроизведения музыки с персонализированными плейлистами.
+                            </p>
+                        </header>
+                        
+                        <div class="card__content">
+                            <div class="card__technologies">
+                                <h4 class="card__technologies-title">Технологии</h4>
+                                <ul class="card__technologies-list">
+                                    <li class="card__technologies-item">React</li>
+                                    <li class="card__technologies-item">GraphQL</li>
+                                    <li class="card__technologies-item">AWS</li>
+                                    <li class="card__technologies-item">Spotify API</li>
+                                </ul>
+
+                                <div class="card__links">
+                                    <a href="#" class="btn">
+                                        <span class="btn__icon" aria-hidden="true">🌐</span>
+                                        <span class="btn__text">Посмотреть проект</span>
+                                    </a>
+                                    <a href="#" class="btn">
+                                        <span class="btn__icon" aria-hidden="true">🐙</span>
+                                        <span class="btn__text">GitHub</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+
+            <footer class="projects__footer">
+                <p class="projects__counter">
+                    Проект 1 из 7
+                </p>
+            </footer>
         </section>
+
         <section class="technologies" >
             <h2 class="technologies__title">
                 Изученные технологии
             </h2>
         </section>
+
         <section class="literature">
             <h2 class="literature__title">
                 Изученная литература
             </h2>
         </section>
+
         <section class="statistics">
             <h2 class="statistics__title">
                 Статистика кода
             </h2>
         </section>
+
         <section class="about" id="about">
             <h2 class="about__title">
                 О себе
             </h2>
         </section>
+
         <section class="contacts" id="contacts">
             <h2 class="contacts__title">
                 Свяжитесь со мной
             </h2>
         </section>
+
         <section class="prices" id="prices">
             <h2 class="prices__title">
                 Услуги и цены
             </h2>
         </section>
+
     </main>
     <footer class="footer">
 
