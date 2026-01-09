@@ -225,6 +225,10 @@ body {
 .logo:hover {
     color: rgb(229, 255, 0);
 }
+.logo:focus {
+    outline: 2px solid #62fe4d;
+    outline-offset: 2px;
+}
 .logo__img {
     width: 64px;
     height: 64px;
@@ -238,20 +242,20 @@ body {
 .nav__link {
     display: block;
     transition: transform 0.3s, color 0.3s ease-in-out;
+    cursor: pointer;
 }
 .nav__link:hover {
     transform: scale(1.1);
     color: rgb(229, 255, 0);
 }
+.nav__link:focus {
+    outline: 2px solid #62fe4d;
+    outline-offset: 2px;
+} 
 .nav__link:active {
     transform: scale(0.9);
     opacity: 0.8;
 }
-.nav__link[aria-current="page"] {
-    font-weight: bold;
-    color: rgb(229, 255, 0);
-    border-bottom: 2px solid #62fe4d;
-} 
 /* intro */
 .intro {
     display: flex;
@@ -279,6 +283,7 @@ body {
     font-size: 16px;
     background-color: #ccccff;
     color: black;
+    cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease-in, background-color  0.3s ease-in-out;
 }
 .intro__btn:hover {
@@ -298,6 +303,7 @@ body {
 
 /* projects */
 .projects {
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -318,12 +324,104 @@ body {
 
 /* gates */
 .gates {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
 }
 .gates__left {
-    max-width: 550px;
+  
+    
 }
+.technologies__list {
+    margin: 60px auto;
+    padding: 0;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 20px solid #075046;
+    border-radius: 50%;
+    background: transparent;
+    z-index: -1;
+}
+.technologies__item {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80px;
+    height: 40px;
+    margin-left: -40px;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px;
+    background: rgba(92, 146, 77, 0.3);
+    color: white;
+    border-radius: 15px;
+    transform-origin: 0 190px;
+}
+.technologies__item:nth-child(1) {
+    transform: rotate(0deg) translateY(-150px) rotate(0deg);
+}
+.technologies__item:nth-child(2) {
+    transform: rotate(45deg) translateY(-150px) rotate(-45deg);
+}
+.technologies__item:nth-child(3) {
+    transform: rotate(90deg) translateY(-150px) rotate(-90deg);
+}
+.technologies__item:nth-child(4) {
+    transform: rotate(135deg) translateY(-150px) rotate(-135deg);
+}
+.technologies__item:nth-child(5) {
+    transform: rotate(180deg) translateY(-150px) rotate(-180deg);
+}
+.technologies__item:nth-child(6) {
+    transform: rotate(225deg) translateY(-150px) rotate(-225deg);
+}
+.technologies__item:nth-child(7) {
+    transform: rotate(270deg) translateY(-150px) rotate(-270deg);
+}
+.technologies__item:nth-child(8) {
+    transform: rotate(315deg) translateY(-150px) rotate(-315deg);
+}
+.gates__navigation {
+    position: relative;
+}
+.btn__left {
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+}
+.btn__right {
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+}
+.gates__nav-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(26, 90, 281, 0.3);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease-in, background-color  0.3s ease-in-out;
+}
+
+.gates__nav-btn:hover {
+    transform: scale(1.2);
+    color: black;
+    background-color: #9ec7ff;
+}
+.gates__nav-btn:focus {
+    outline: 2px solid #62fe4d;
+    outline-offset: 2px;
+} 
+.gates__nav-btn:active {
+    transform: scale(0.95);
+    color: white;
+    background-color: #022e6e;
+} 
 .gates__right {
     padding: 30px;
     max-width: 550px;
@@ -344,7 +442,7 @@ body {
 }
 .card__span {
     margin-right: 15px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 15px 10px 15px;
     border: 0 solid;
     border-radius: 50px;
     background-color: #b3d1fc;
@@ -367,9 +465,6 @@ body {
     gap: 20px;
     justify-content: center;
 }
-.card__technologies-title {
-    
-}
 .card__technologies-list {
     display: flex;
     gap: 10px;
@@ -380,6 +475,7 @@ body {
     border-radius: 25px;
     background-color: rgb(26, 90, 281, 0.3);
     text-align: center;
+    cursor: pointer;
 }
 .card__links {
     display: flex;
@@ -392,7 +488,22 @@ body {
     border: 1px solid white;
     border-radius: 10px;
     text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease-in, background-color  0.3s ease-in-out;
 }
+.btn:hover {
+    background-color: #b3d1fc;
+    color: black;
+}
+.btn:focus {
+    outline: 2px solid #62fe4d;
+    outline-offset: 2px;
+} 
+.btn:active {
+    transform: scale(0.95);
+    color: white;
+    background-color: #022e6e;
+} 
 .btn__icon {
     margin-right: 10px;
 }
