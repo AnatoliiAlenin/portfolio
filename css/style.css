@@ -529,7 +529,14 @@ body {
     text-align: center;
 }
 .skills {
-    
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+
+}
+.skills__title {
+    color: #5789d4;
+    margin-bottom: 15px;
 }
 .skills__list {
     display: grid;
@@ -567,6 +574,9 @@ body {
     margin-bottom: 30px;
     text-align: center;
 }
+.literature__title {
+    color: #5789d4;
+}
 .literature__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -585,19 +595,11 @@ body {
 .book__title {
     margin-bottom: 15px;
     font-size: 16px;
+    color: #5789d4;
 }
 .book__span {
     margin-bottom: 15px;
 }
-/* .book__star {
-    margin-bottom: 10px;
-    background-image: url(../img/star.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 24px;
-    height: 24px;
-} */
 .book__age {
     margin-bottom: 15px;
     display: flex;
