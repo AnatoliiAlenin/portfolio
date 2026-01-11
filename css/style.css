@@ -514,9 +514,9 @@ body {
 /*technologies*/
 
 .technologies {
+    margin-bottom: 45px;
     display: flex;
     flex-direction: column;
-    
 }
 .technologies__title {
     margin-bottom: 16px;
@@ -529,7 +529,14 @@ body {
     text-align: center;
 }
 .skills {
-    
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+
+}
+.skills__title {
+    color: #5789d4;
+    margin-bottom: 15px;
 }
 .skills__list {
     display: grid;
@@ -545,4 +552,63 @@ body {
 .skill {
     display: flex;
     justify-content: space-between;
+}
+.progress {
+    margin: 10px 0;
+    width: 100%;
+    height: 24px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+.progress__bar {
+    height: 100%;
+    background: linear-gradient(to right, #4c6faf, #8dc34f);
+    border-radius: 12px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* literature */
+.literature__header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.literature__title {
+    color: #5789d4;
+}
+.literature__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+.literature__item {
+    padding: 15px;
+    border: 1px solid #b3d1fc;
+    border-radius: 10px;
+}
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.book__title {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #5789d4;
+}
+.book__span {
+    margin-bottom: 15px;
+}
+.book__age {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+.book__progress {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 100%;
 }
