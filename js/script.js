@@ -85,8 +85,6 @@ document.addEventListener("DOMContentLoaded", function() {
             starfield.appendChild(createStar(randomType));
             created++;
         }
-        
-        console.log(`Создано ${created} звезд`);
     }
     
     // 6. Инициализация
