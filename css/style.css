@@ -752,6 +752,10 @@ body {
 /* contacts */
 .contacts {
     margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     text-align: center;
 }
@@ -779,6 +783,10 @@ body {
 /* prices */
 .prices {
     margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     text-align: center;
     font-family: 'Muller', sans-serif;
@@ -842,4 +850,34 @@ body {
 .services__term {
     display: flex;
     justify-content: space-between;
+}
+
+/* footer */
+footer {
+    text-align: center;
+}
+.footer__container {
+    margin-bottom: 20px;
+    padding: 20px 0;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #537099;
+    border-bottom: 1px solid #537099;
+    backdrop-filter: blur(2px) brightness(30%) contrast(110%);
+}
+.footer__title {
+    margin-bottom: 15px;
+    color: #5789d4;
+}
+.tabl {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.footer__list {
+    padding: 0 30px;
+    display: flex;
+    gap: 20px;
 }
