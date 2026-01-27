@@ -511,6 +511,7 @@ body {
 .projects__footer {
     text-align: center;
 }
+
 /*technologies*/
 
 .technologies {
@@ -532,7 +533,6 @@ body {
    display: flex;
    flex-direction: column;
    gap: 25px;
-
 }
 .skills__title {
     color: #5789d4;
@@ -548,6 +548,7 @@ body {
     border: 1px solid #5789d4;
     border-radius: 15px;
     background-color: rgb(10, 10, 10, 0.7);
+    backdrop-filter: blur(4px) brightness(90%) contrast(110%);
 }
 .skill {
     display: flex;
@@ -593,6 +594,7 @@ body {
     border-radius: 10px;
     transition: transform 0.3s, color 0.3s ease-in-out;
     background-color: rgba(39, 39, 51, 0.8);
+    backdrop-filter: blur(4px) brightness(90%) contrast(110%);
 }
 .literature__item:hover {
     transform: scale(1.1);
@@ -643,6 +645,7 @@ body {
     border-radius: 25px;
     text-align: center;
     background-color: rgba(15, 15, 17, 0.8);
+    backdrop-filter: blur(2px) brightness(45%) contrast(110%);
 }
 .statistic__cod {
     margin-bottom: 8px;
@@ -660,6 +663,7 @@ body {
     border: 1px solid #4c6faf;
     border-radius: 25px;
     background-color: rgba(15, 15, 17, 0.7);
+    backdrop-filter: blur(1px) brightness(45%) contrast(110%);
 }
 .cod__card {
     display: flex;
@@ -777,14 +781,17 @@ body {
     margin-bottom: 48px;
     height: 100vh;
     text-align: center;
+    font-family: 'Muller', sans-serif;
 }
 .prices__title {
     margin-bottom: 24px;
     font-size: 36px;
     color: #5789d4;
 }
-
-
+.prices__text {
+    margin-bottom: 20px;
+    
+}
 .prices__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -793,15 +800,44 @@ body {
 .prices__item {
     padding: 24px;
     max-width: 408px;
-    border: 1px solid #022e6e;
+    border: 1px solid #537099;
     border-radius: 15px;
+    background: radial-gradient(
+        circle,
+        rgba(74, 77, 80, 0.5) 25%,    
+        rgba(255, 255, 255, 0.0) 100%  
+    );
+    backdrop-filter: blur(4px) brightness(45%) contrast(110%);
+    
+}
+.box {
+    text-align: left;
+
+}
+.box__img {
+    margin-bottom: 16px;
+}
+.box__title {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.box__text {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    font-style: 14px;
+    color: rgba(161, 160, 252, 0.5);
+    border-bottom: 2px solid #496996;
 }
 .services {
-   
+   font-size: 14px;
 }
 .services__prices {
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
+}
+.services__text {
+    color: rgba(161, 160, 252, 0.5);
 }
 .services__term {
     display: flex;
