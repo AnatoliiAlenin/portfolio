@@ -46,6 +46,20 @@
     .literature__item:hover {
     transform: scale(1.05);
     }
+    .book {
+        height: 232px;
+        justify-content: space-between;
+        text-align: end;
+    }
+    .book__title {
+        max-width: 120px;
+    }
+    .book__span {
+        max-width: 120px;
+    }
+    .book__age {
+        width: 100%;
+    }
     .cod__list {
         gap: 10px;
     }
@@ -67,6 +81,10 @@
         gap: 10px;
     }
 }
+@media (max-width: 860px) {
+    
+}
+
 
 
 @media (max-width: 768px) {
