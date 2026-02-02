@@ -936,12 +936,13 @@ body {
 
 }
 .box__img {
-    padding: 16px;
-    width: 32px;
-    height: 32px;
+    padding: 14px;
+    width: 64px;
+    height: 64px;
     margin-bottom: 16px;
     border: 1px solid #537099;
     border-radius: 10px;
+    background-color: #537099;
 }
 .box__title {
     margin-bottom: 12px;
