@@ -685,6 +685,9 @@ body {
 .book__span {
     margin-bottom: 15px;
 }
+.book__star {
+    color: #91ff00;
+}
 .book__age {
     margin-bottom: 15px;
     display: flex;
