@@ -882,9 +882,9 @@ body {
 /* prices */
 .prices {
     margin: 0 auto;
+    margin-bottom: 90px;
     padding: 0 15px 0 15px;
     max-width: 1200px;
-    margin-bottom: 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;

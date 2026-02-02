@@ -1,0 +1,80 @@
+@media (max-width: 910px) {
+    .intro__title {
+        max-width: 600px;
+        text-align: center;
+    }
+    .projects {
+        margin-bottom: 100px;
+        gap: 0;
+    }
+    .projects__header {
+    margin-bottom: 0px;
+    }
+    .projects__title {
+        margin-bottom: 0px;
+    }
+    .gates {
+        margin-bottom: 0;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .gates__right {
+        padding: 15px;
+    }
+    .card__number {
+        margin-bottom: 5px;
+    }
+    .card__text {
+        margin-bottom: 5px;
+    }
+    .card__technologies {
+        gap: 10px;
+    }
+    .skills__list {
+        gap: 10px;
+    }
+    .technologies {
+        margin-bottom: 30px;
+    }
+    .literature {
+        margin-bottom: 30px;
+    }
+    .literature__list {
+        gap: 20px;
+    }
+    .literature__item:hover {
+    transform: scale(1.05);
+    }
+    .cod__list {
+        gap: 10px;
+    }
+    .prices {
+        margin-bottom: 30px;
+    }
+    .prices__list {
+        gap: 20px;
+    }
+    .prices__item:hover {
+    transform: scale(1.05);
+    }
+    .footer__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__container { 
+        padding: 20px 15px 20px 15px;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .progress {
+        height: 20px;
+    }
+    
+    .progress__bar::after {
+        background-size: 30px 30px;
+    }
+}
