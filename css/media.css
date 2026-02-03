@@ -20,6 +20,7 @@
         gap: 10px;
     }
     .gates__right {
+        margin-bottom: 10px;
         padding: 15px;
     }
     .card__number {
@@ -36,6 +37,12 @@
     }
     .technologies {
         margin-bottom: 30px;
+    }
+    .card__technologies-list {
+        justify-content: space-between;
+    }
+    .card__links {
+        justify-content: space-between;
     }
     .literature {
         margin-bottom: 30px;
@@ -80,19 +87,206 @@
         padding: 20px 15px 20px 15px;
         gap: 10px;
     }
+    .footer__text {
+        margin-bottom: 10px;
+    }
 }
 @media (max-width: 860px) {
-    
+    .nav__list {
+        gap: 15px;
+    }
+    .literature__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .prices {
+        margin-bottom: 90px;
+    }
+    .prices__title {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .prices__text {
+    margin-bottom: 10px;
+    }
+    .prices__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .prices__item {
+        padding: 10px;
+    }
+    .box {
+        min-height: 250px;
+    }
+    .box__content {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .box__text {
+        margin-bottom: 8px;
+    }
 }
-
-
-
-@media (max-width: 768px) {
+@media (max-width: 650px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .logo__text {
+        margin-right: 30px;
+    }
+    .nav {
+        width: 100%;
+    }
+    .nav__list {
+        justify-content: center;
+        gap: 10px;
+    }
     .progress {
         height: 20px;
     }
-    
     .progress__bar::after {
         background-size: 30px 30px;
     }
+    .footer__container {
+        margin-bottom: 10px;
+    }
+    .footer__greeting {
+        font-size: 14px;
+    }
+    .footer__title {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .footer__list {
+        gap: 10px;
+    }
+}
+@media (max-width: 540px) {
+    .card__technologies-list {
+        flex-wrap: wrap;
+    }
+    .card__links {
+        flex-wrap: wrap;
+    }
+    .skills__list {
+        grid-template-columns: 1fr;
+    }
+    
+    .literature__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .cod__list {
+        grid-template-columns: 1fr;
+    }
+    
+    .prices {
+        margin-bottom: 30px;
+        height: 100%;
+    }
+    .prices__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 390px) {
+    .technologies__list {
+        width: 250px;
+        height: 250px;
+    }
+    .technologies__item:nth-child(1) {
+        transform: rotate(0deg) translateY(-120px) rotate(0deg);
+    }
+    .technologies__item:nth-child(2) {
+        transform: rotate(45deg) translateY(-120px) rotate(-45deg);
+    }
+    .technologies__item:nth-child(3) {
+        transform: rotate(90deg) translateY(-120px) rotate(-90deg);
+    }
+    .technologies__item:nth-child(4) {
+        transform: rotate(135deg) translateY(-120px) rotate(-135deg);
+    }
+    .technologies__item:nth-child(5) {
+        transform: rotate(180deg) translateY(-120px) rotate(-180deg);
+    }
+    .technologies__item:nth-child(6) {
+        transform: rotate(225deg) translateY(-120px) rotate(-225deg);
+    }
+    .technologies__item:nth-child(7) {
+        transform: rotate(270deg) translateY(-120px) rotate(-270deg);
+    }
+    .technologies__item:nth-child(8) {
+        transform: rotate(315deg) translateY(-120px) rotate(-315deg);
+    }
+    .btn {
+        width: 100%;
+    }
+
+    .intro__title {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .intro__text {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .technologies__title {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .technologies__text {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .literature__title {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .literature__text {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .statistics__title {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .statistic__text {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .statistic__result {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+
+    .about__title {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .about__text1 {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .about__text2 {
+        font-size: 16px;
+    }
+
+    .contacts__title {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .contacts__text {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    
+
 }
