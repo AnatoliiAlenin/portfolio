@@ -252,3 +252,19 @@ function updateProgressBarById(id, newPercent) {
           animateProgressBar(bar, currentValue, skillName);
       });
 }
+// burger меню
+const burger = document.querySelector('.burger');
+const nav__list = document.querySelector('.nav__list');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  nav__list.classList.toggle('active');
+});
+
+// Закрываем меню при клике вне него
+document.addEventListener('click', (e) => {
+  if (!nav__list.contains(e.target) && !burger.contains(e.target)) {
+    burger.classList.remove('active');
+    nav__list.classList.remove('active');
+  }
+});
