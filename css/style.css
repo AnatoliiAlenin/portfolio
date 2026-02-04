@@ -457,6 +457,20 @@ body {
     background-color: #022e6e;
 } 
 .gates__right {
+    
+    /* padding: 30px;
+    max-width: 550px;
+    border: 1px solid rgb(56, 290, 302, 1);
+    border-radius: 15px;
+    background: radial-gradient(
+        circle,
+        rgba(26, 90, 281, 0.25) 20%,    
+        rgba(255, 255, 255, 0) 100%  
+    ); */
+}
+
+
+.card {
     padding: 30px;
     max-width: 550px;
     border: 1px solid rgb(56, 290, 302, 1);
@@ -467,8 +481,6 @@ body {
         rgba(255, 255, 255, 0) 100%  
     );
 }
-
-/* card__number */
 .card__number {
     margin-bottom: 16px;
     display: flex;

@@ -101,7 +101,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
 });
-
 // 10. Запускаем при полной загрузке страницы
 window.addEventListener('load', function() {
     // Небольшая задержка для плавного появления
@@ -109,13 +108,12 @@ window.addEventListener('load', function() {
         document.getElementById('starfield').style.opacity = '1';
     }, 100);
 });
-
 // Функция для инициализации прогресс-баров
 function initializeProgressBars() {
     // Находим все карточки с навыками
-    const skillCards = document.querySelectorAll('.skills__card, .skills__сard');    
+    const skillCards = document.querySelectorAll('.skills__card, .skills__сard', '.literature__item, literature__item');    
     skillCards.forEach((card, index) => {
-        const percentElement = card.querySelector('.skill__procent');
+        const percentElement = card.querySelector('.skill__procent', '.book__pro');
         const progressBar = card.querySelector('.progress__bar');
         
         if (percentElement && progressBar) {
@@ -145,7 +143,6 @@ function initializeProgressBars() {
         }
     });
 }
-
 
 function animateProgressBar(progressBar, targetPercent, skillName) {
     progressBar.classList.add('animating');
@@ -181,7 +178,6 @@ function animateProgressBar(progressBar, targetPercent, skillName) {
     // Запускаем анимацию
     requestAnimationFrame(animate);
 }
-
 
 function initializeProgressBarsWithObserver() {
     const skillElements = document.querySelectorAll('.skill__procent');
@@ -232,7 +228,7 @@ function initializeProgressBarsWithObserver() {
 
 document.addEventListener('DOMContentLoaded', function() {
      initializeProgressBarsWithObserver();
- });
+});
 
 // Функция для обновления прогресс-бара по ID
 function updateProgressBarById(id, newPercent) {
