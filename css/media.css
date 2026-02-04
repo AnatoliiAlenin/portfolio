@@ -1,3 +1,9 @@
+@media (max-width: 1100px) {
+    .book__title {
+        max-width: 200px;
+        text-align: right;
+    }
+}
 @media (max-width: 910px) {
     .intro__title {
         max-width: 600px;
