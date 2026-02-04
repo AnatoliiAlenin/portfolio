@@ -194,6 +194,47 @@
     }
 }
 @media (max-width: 390px) {
+    .header {
+        flex-wrap: nowrap;
+    }
+    .nav {
+        display: flex;
+        justify-content: right;
+    }
+    /*  */
+    .burger {
+        display: flex;
+    }
+    .nav__list {
+        position: fixed;
+        top: 60px; /* Смещение от верха (учитываем высоту шапки) */
+        right: -100%; /* Изначально скрыто справа */
+        flex-direction: column;
+        background-color: #333;
+        width: 40%;
+        height: calc(100vh - 460px);
+        padding: 20px 20px 20px 40px;
+        gap: 15px;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        border-radius: 15px;
+    }
+    .nav__list.active {
+        right: -20px; /* При классе active — выезжает слева */
+    }
+    .tabl {
+        padding: 0;
+        top: auto;
+        right: auto;
+        background-color: transparent;
+        z-index: 0;
+        height: auto;
+        width: 127px;
+        
+    }
+
+   
+    
     .technologies__list {
         width: 250px;
         height: 250px;
